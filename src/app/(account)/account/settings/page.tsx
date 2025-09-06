@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -13,15 +12,11 @@ import {
   Settings, 
   Bell, 
   Shield, 
-  Globe, 
   Palette,
-  Save,
-  Eye,
-  EyeOff
+  Save
 } from "lucide-react";
 
 export default function SettingsPage() {
-  const [showPassword, setShowPassword] = useState(false);
   const [settings, setSettings] = useState({
     // General Settings
     language: "en",
@@ -52,7 +47,7 @@ export default function SettingsPage() {
     sessionTimeout: "30"
   });
 
-  const handleSettingChange = (key: string, value: any) => {
+  const handleSettingChange = (key: string, value: string | boolean) => {
     setSettings(prev => ({
       ...prev,
       [key]: value

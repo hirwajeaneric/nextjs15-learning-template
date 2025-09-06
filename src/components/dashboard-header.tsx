@@ -19,8 +19,7 @@ import {
   Menu, 
   Settings, 
   User, 
-  LogOut,
-  ChevronDown
+  LogOut
 } from "lucide-react";
 
 interface DashboardHeaderProps {

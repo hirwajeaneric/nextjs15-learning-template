@@ -104,8 +104,8 @@ export default function ContactPage() {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Have a question or want to work together? We'd love to hear from you. 
-              Send us a message and we'll respond as soon as possible.
+              Have a question or want to work together? We&apos;d love to hear from you. 
+              Send us a message and we&apos;ll respond as soon as possible.
             </p>
           </div>
         </div>
@@ -118,9 +118,9 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Let's talk</h2>
+                <h2 className="text-3xl font-bold mb-4">Let&apos;s talk</h2>
                 <p className="text-lg text-muted-foreground">
-                  Ready to start your next project? We're here to help you succeed.
+                  Ready to start your next project? We&apos;re here to help you succeed.
                 </p>
               </div>
 
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
                     <p className="text-muted-foreground">
-                      Thank you for your message. We'll get back to you soon.
+                      Thank you for your message. We&apos;ll get back to you soon.
                     </p>
                   </div>
                 ) : (
@@ -270,7 +270,7 @@ export default function ContactPage() {
               Ready to get started?
             </h2>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Let's discuss your project and see how we can help you achieve your goals.
+              Let&apos;s discuss your project and see how we can help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="text-lg px-8">

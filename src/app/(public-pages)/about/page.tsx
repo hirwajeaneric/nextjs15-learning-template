@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Award, Heart, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   const stats = [
@@ -69,7 +70,7 @@ export default function AboutPage() {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a passionate team of innovators, designers, and developers dedicated to creating 
+              We&apos;re a passionate team of innovators, designers, and developers dedicated to creating 
               solutions that empower businesses and individuals to achieve their goals.
             </p>
           </div>
@@ -113,8 +114,8 @@ export default function AboutPage() {
                   regardless of their technical background or company size.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  We believe that great ideas shouldn't be limited by technical constraints. 
-                  That's why we've built a platform that's both powerful and intuitive, 
+                  We believe that great ideas shouldn&apos;t be limited by technical constraints. 
+                  That&apos;s why we&apos;ve built a platform that&apos;s both powerful and intuitive, 
                   enabling anyone to bring their vision to life.
                 </p>
                 <Button size="lg">
@@ -129,7 +130,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-semibold">Innovation First</h3>
                   <p className="text-muted-foreground">
-                    We're always exploring new ways to solve problems and create value.
+                    We&apos;re always exploring new ways to solve problems and create value.
                   </p>
                 </div>
               </div>
@@ -184,9 +185,11 @@ export default function AboutPage() {
               <Card key={index} className="text-center">
                 <CardHeader>
                   <div className="mx-auto w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 mb-4 overflow-hidden">
-                    <img 
+                    <Image 
                       src={member.image} 
                       alt={member.name}
+                      width={96}
+                      height={96}
                       className="w-full h-full object-cover"
                     />
                   </div>

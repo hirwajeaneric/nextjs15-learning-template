@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,6 @@ import {
   BarChart3, 
   FileText,
   LogOut,
-  Menu,
   X
 } from "lucide-react";
 import { cn } from "@/lib/utils";

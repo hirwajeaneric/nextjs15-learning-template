@@ -6,8 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { 
   Menu, 
   Bell, 
-  Settings,
-  User
+  Settings
 } from "lucide-react";
 
 interface AccountHeaderProps {

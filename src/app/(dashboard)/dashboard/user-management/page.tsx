@@ -31,7 +31,16 @@ import {
 export default function UserManagementPage() {
   const [isAddUserOpen, setIsAddUserOpen] = useState(false);
   const [isEditUserOpen, setIsEditUserOpen] = useState(false);
-  const [selectedUser, setSelectedUser] = useState<any>(null);
+  const [selectedUser, setSelectedUser] = useState<{
+    id: number;
+    name: string;
+    email: string;
+    role: string;
+    status: string;
+    permissions: string[];
+    lastLogin: string;
+    joinDate: string;
+  } | null>(null);
 
   const users = [
     {

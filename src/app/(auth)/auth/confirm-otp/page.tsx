@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Shield, ArrowRight, CheckCircle, RotateCcw } from "lucide-react";
+import { ArrowRight, CheckCircle, RotateCcw } from "lucide-react";
 
 export default function ConfirmOTPPage() {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
@@ -142,7 +142,9 @@ export default function ConfirmOTPPage() {
               {otp.map((digit, index) => (
                 <Input
                   key={index}
-                  ref={(el) => (inputRefs.current[index] = el)}
+                  ref={(el) => {
+                    inputRefs.current[index] = el;
+                  }}
                   type="text"
                   inputMode="numeric"
                   pattern="[0-9]"
